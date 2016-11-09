@@ -1,2 +1,2 @@
-# Core
-The core engine and explorer
+# Engine
+This is the core engine
