@@ -1,0 +1,6 @@
+﻿{
+  "projects": [ "Source/Core", "Source/Core.Specifications"],
+  "sdk": {
+    "version": "1.1.0"
+  }
+}
