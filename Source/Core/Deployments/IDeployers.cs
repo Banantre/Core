@@ -2,16 +2,19 @@
  *  Copyright (c) Banantre. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
+using System.Collections.Generic;
+
 namespace Core.Deployments
 {
     /// <summary>
-    /// Defines the engine capable of running <see cref="IDeployment">deployments</see>
+    /// Defines a system for getting <see cref="IDeployer">deployers</see> in memory
     /// </summary>
-    public interface IDeploymentOrchestrator
+    public interface IDeployers
     {
         /// <summary>
-        /// Orchestrate all deployments
+        /// Get all deployers in memory
         /// </summary>
-        void Orchestrate();
+        /// <returns><see cref="IEnumerable{IDeployer}">All deployers</see> in memory </returns>
+        IEnumerable<IDeployer> All { get; }
     }
 }
