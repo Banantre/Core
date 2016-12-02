@@ -4,8 +4,11 @@
  *--------------------------------------------------------------------------------------------*/
 namespace Core.Deployments
 {
-    public interface IDeploymentEngine
+    /// <summary>
+    /// Represents an implementation of <see cref="IDeploymentOrchestrator"/>
+    /// </summary>
+    public class DeploymentOrchestrator : IDeploymentOrchestrator
     {
-         
+        
     }
 }
