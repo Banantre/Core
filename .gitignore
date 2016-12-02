@@ -45,3 +45,5 @@ obj
 *.pdb
 *.idb
 *.pidb
+*.rsp
+*.IncrementalCache
