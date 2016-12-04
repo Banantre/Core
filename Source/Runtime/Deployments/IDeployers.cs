@@ -2,7 +2,6 @@
  *  Copyright (c) Banantre. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-using System.Collections.Generic;
 
 namespace Runtime.Deployments
 {
@@ -12,9 +11,10 @@ namespace Runtime.Deployments
     public interface IDeployers
     {
         /// <summary>
-        /// Get all deployers in memory
+        /// Get a deployer based on its typename
         /// </summary>
-        /// <returns><see cref="IEnumerable{IDeployer}">All deployers</see> in memory </returns>
-        IEnumerable<IDeployer> All { get; }
+        /// <param name="typeName">Name of the deployer</param>
+        /// <returns><see cref="IDeployer"/> found</returns>
+        IDeployer   GetByTypeName(string typeName);
     }
 }

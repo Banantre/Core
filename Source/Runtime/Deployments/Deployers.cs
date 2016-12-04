@@ -4,7 +4,6 @@
  *--------------------------------------------------------------------------------------------*/
 
 using System;
-using System.Collections.Generic;
 
 namespace Runtime.Deployments
 {
@@ -13,14 +12,11 @@ namespace Runtime.Deployments
     /// </summary>
     public class Deployers : IDeployers
     {
-        
+
 #pragma warning disable 1591 // Xml Comments        
-        public IEnumerable<IDeployer> All
+        public IDeployer GetByTypeName(string typeName)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
+            throw new NotImplementedException();
         }
 #pragma warning restore 1591 // Xml Comments        
     }

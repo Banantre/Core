@@ -4,23 +4,23 @@
  *--------------------------------------------------------------------------------------------*/
 using System.Collections.Generic;
 
-namespace Runtime.Deployments
+namespace Runtime.Services
 {
     /// <summary>
-    /// Defines a deployer - something that knows about and is capable of deploying <see cref="IArtefacts"/>
+    /// Defines a configuration for a deployment
     /// </summary>
-    public interface IDeployer
+    public interface IServiceManifest
     {
         /// <summary>
-        /// Name of the deployer
+        /// Gets the type of deployer of the 
         /// </summary>
         /// <returns></returns>
-        string Name { get; }
+        string DeployerType { get; }
 
         /// <summary>
-        /// Gets all the steps
+        /// Gets the artefacts for the deploiyment
         /// </summary>
-        /// <returns><see cref="IEnumerable{IDeploymentStep}">Deployment steps</see> </returns>
-        IEnumerable<IDeploymentStep>    Steps { get; }
+        /// <returns></returns>
+        IEnumerable<IArtefact> Artefacts { get; }
     }
 }
