@@ -10,7 +10,7 @@ SystemJS.config({
     devConfig: {
         "map": {
             "plugin-babel": "npm:systemjs-plugin-babel@0.0.12",
-            "process": "npm:jspm-nodelibs-process@0.2.0",
+            "process": "github:jspm/nodelibs-process@0.2.0-alpha",
             "core-js": "npm:core-js@1.2.7",
             "babel-runtime": "npm:babel-runtime@5.8.38",
             "path": "npm:jspm-nodelibs-path@0.2.0",
