@@ -37,10 +37,12 @@ namespace Runtime.Console
             System.Console.WriteLine("Invoking");
             nodeServices.InvokeExportAsync<int>("./test", "addNumbers", 1, 2).ContinueWith(r => {
                 System.Console.WriteLine($"Result is {r.Result}");
-
             });
 
-            var orchestrator = container.GetInstance<DeploymentOrchestrator>();
+            //var orchestrator = container.GetInstance<DeploymentOrchestrator>();
+
+            System.Console.WriteLine("Press any key");
+            System.Console.ReadLine();
         }
     }
 }

@@ -1,8 +1,4 @@
-module.exports = {
-    addNumbers: function(callback, first, second) {
-        var result = first+second;
-        console.log("Added numbers : "+result);
-        callback(null, result);
-    }
-};
-
+console.log("Load babel");
+require('babel-core/register');
+console.log("Babel loaded");
+module.exports = require("./test2");
