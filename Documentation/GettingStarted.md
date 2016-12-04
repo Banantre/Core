@@ -195,6 +195,14 @@ The given context:
         }
     }
 
+### Karma
+
+You can run all the specifications using Karma by going to the root of the repository and run the following:
+
+    karma start
+
+This will run the specs and wait for changes and then rerun. Chances are that this is all you need, since you're writing specifications to
+confirm the functionality.   
 
 ### Wallaby
 
