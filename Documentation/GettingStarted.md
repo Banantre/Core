@@ -138,13 +138,36 @@ Once the project is set you can then press F1 and type "run test" and select the
 
 ## JavaScript
 
+At the root of the repository, we need to run a few things to get up and running.
+We need to install all the node packages we depend on:
+
+    npm install
+
+Or if you're using [Yarn](https://yarnpkg.com) - which is highly recommended as its much faster and reliable
+
+    yarn install
+
+Then we need to restore any JSPM packages:
+
+    jspm install
+
+Everything is built on top of Gulp as a task runner. 
+By just typing:
+
+    gulp
+
+You will get the development environment running with a watcher that will react to file changes and run the build pipeline.
+You specifically run different parts:
+
+    gulp javaScript
+
+For transpiling and outputting transpiled versions of the JavaScript code to the `./Distribution` folder in the root of the repository.
+
+
 ### Specifications
 
 All JavaScript code has been specified using [Jasmine](http://pivotal.github.com/jasmine/) with a similar style and structure as with the C# code. The folder structure is exactly the same. 
 
-
-    import * as Context from "./given/nothing";
-    import {Deployer} from "../../../Runtime.JavaScript/Deployments/Deployer";
 
     describe("when doing nothing", () => {
         let context = null;
@@ -174,6 +197,13 @@ The given context:
 
 
 ### Wallaby
+
+For running the JavaScript specifications, the project has been configured with support for [Wallaby](https://wallabyjs.com). Inside [Visual Studio Code](http://code.visualstudio.com/)
+or the editor you're using that has Wallaby installed you should be able to run it directly. 
+
+Example for VSCode, press F1 and then:
+
+![](./Images/VSCodeWallaby.png)
 
 
 
