@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Core.Deployments;
+using Runtime.Deployments;
 using Machine.Specifications;
 using Moq;
 
-namespace Core.Specifications.Deployment.for_DeploymentOrchestrator.given
+namespace Runtime.Specifications.Deployment.for_DeploymentOrchestrator.given
 {
     public class orchestrator_and_one_deployer_and_no_steps : all_dependencies
     {

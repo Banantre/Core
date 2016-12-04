@@ -2,7 +2,7 @@ using Machine.Specifications;
 using Moq;
 using It = Machine.Specifications.It;
 
-namespace Core.Specifications.Deployment.for_DeploymentOrchestrator
+namespace Runtime.Specifications.Deployment.for_DeploymentOrchestrator
 {
     public class when_orchestrating_with_one_deployer : given.orchestrator_and_one_deployer_and_no_steps
     {

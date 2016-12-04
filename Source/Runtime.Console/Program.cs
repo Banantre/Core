@@ -1,9 +1,8 @@
-﻿using System;
-using Core.Deployments;
+﻿using Runtime.Deployments;
 using StructureMap;
 
 
-namespace ConsoleApplication
+namespace Runtime.Console
 {
     public class Program
     {

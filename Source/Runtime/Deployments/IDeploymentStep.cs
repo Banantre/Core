@@ -2,7 +2,7 @@
  *  Copyright (c) Banantre. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-namespace Core.Deployments
+namespace Runtime.Deployments
 {
     /// <summary>
     /// Defines a step that can be performed during a deployment

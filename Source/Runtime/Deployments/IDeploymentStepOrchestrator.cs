@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 using System.Collections.Generic;
 
-namespace Core.Deployments
+namespace Runtime.Deployments
 {
     /// <summary>
     /// Represents an orcestrator for <see cref="IDeployementStep">deployment steps</see>

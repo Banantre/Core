@@ -2,7 +2,7 @@
  *  Copyright (c) Banantre. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-namespace Core.Environments
+namespace Runtime.Environments
 {
     public interface IEnvironment
     {

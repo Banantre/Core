@@ -1,8 +1,8 @@
-using Core.Deployments;
+using Runtime.Deployments;
 using Machine.Specifications;
 using Moq;
 
-namespace Core.Specifications.Deployment.for_DeploymentOrchestrator.given
+namespace Runtime.Specifications.Deployment.for_DeploymentOrchestrator.given
 {
     public class all_dependencies
     {

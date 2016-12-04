@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 using System.Collections.Generic;
 
-namespace Core.Deployments
+namespace Runtime.Deployments
 {
     /// <summary>
     /// Defines a system for getting <see cref="IDeployer">deployers</see> in memory

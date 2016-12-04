@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 using System.Collections.Generic;
 
-namespace Core.Deployments
+namespace Runtime.Deployments
 {
     /// <summary>
     /// Defines a deployer - something that knows about and is capable of deploying <see cref="IArtefacts"/>
