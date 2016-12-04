@@ -2,7 +2,6 @@
  *  Copyright (c) Banantre. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
-using System;
 using Runtime.Services;
 
 namespace Runtime.Deployments
@@ -30,8 +29,8 @@ namespace Runtime.Deployments
         {
             var deployer = _deployers.GetByTypeName(serviceManifest.DeployerType);
             ThrowIfDeployerIsNull(serviceManifest.DeployerType, deployer);
-            //var steps = deployer.Steps;
-            //_deploymentStepOrchestrator.Orchestrate(steps);
+            var steps = deployer.GetStepsFor(serviceManifest);
+            _deploymentStepOrchestrator.Orchestrate(steps);
         }
 #pragma warning restore 1591 // Xml Comments
 

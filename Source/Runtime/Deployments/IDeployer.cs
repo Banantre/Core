@@ -3,6 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 using System.Collections.Generic;
+using Runtime.Services;
 
 namespace Runtime.Deployments
 {
@@ -18,9 +19,9 @@ namespace Runtime.Deployments
         string Name { get; }
 
         /// <summary>
-        /// Gets all the steps
+        /// Gets all the steps for a specific <see cref="IServiceManifest"/>
         /// </summary>
         /// <returns><see cref="IEnumerable{IDeploymentStep}">Deployment steps</see> </returns>
-        IEnumerable<IDeploymentStep>    Steps { get; }
+        IEnumerable<IDeploymentStep>    GetStepsFor(IServiceManifest manifest);
     }
 }
