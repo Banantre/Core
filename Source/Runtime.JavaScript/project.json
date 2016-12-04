@@ -4,7 +4,8 @@
     "debugType": "portable"
   },
   "dependencies": {
-    "Runtime": "1.0.0-*"
+    "Runtime": "1.0.0-*",
+    "Microsoft.AspNetCore.NodeServices": "1.1.0-beta-000002"
   },
   "frameworks": {
     "netstandard1.6": {

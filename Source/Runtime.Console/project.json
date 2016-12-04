@@ -6,6 +6,9 @@
   },
   "dependencies": {
     "Runtime": "1.0.0-*",
+    "Runtime.JavaScript": "1.0.0-*",
+    "Microsoft.AspNetCore.NodeServices": "1.1.0-beta-000002",
+    "Microsoft.Extensions.DependencyInjection": "1.1.0",
     "StructureMap": "4.4.2"
 
   },
