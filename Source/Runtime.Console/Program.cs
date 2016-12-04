@@ -1,4 +1,7 @@
 ﻿using System;
+using Core.Deployments;
+using StructureMap;
+
 
 namespace ConsoleApplication
 {
@@ -6,7 +9,16 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var container = new Container();
+            container.Configure(config => {
+                config.Scan(_ => {
+                    _.AssembliesFromApplicationBaseDirectory();
+                    _.RegisterConcreteTypesAgainstTheFirstInterface();
+                    _.WithDefaultConventions(); 
+                });
+            });
+
+            var orchestrator = container.GetInstance<DeploymentOrchestrator>();
         }
     }
 }

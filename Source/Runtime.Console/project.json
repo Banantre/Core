@@ -5,7 +5,8 @@
     "emitEntryPoint": true
   },
   "dependencies": {
-    "Runtime": "1.0.0-*"
+    "Runtime": "1.0.0-*",
+    "StructureMap": "4.4.2"
 
   },
   "frameworks": {
