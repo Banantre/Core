@@ -6,6 +6,7 @@ module.exports = function (config) {
         singleRun: false,
         frameworks: ["jspm", "jasmine", "chai", "chai-as-promised"],
         files: [
+            "jspm_packages/system-polyfills.js",
             "config.js"
         ],
         jspm: {
@@ -33,7 +34,8 @@ module.exports = function (config) {
         },
         
         proxies: {
-            '/Source': '/base/Source'
+            "/jspm_packages/":"/base/jspm_packages/",
+            "/Source": "/base/Source"
         },
         
         port: 9876,
