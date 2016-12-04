@@ -8,7 +8,7 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": [ "Source/Runtime.Specifications" ],
+            "args": [ "Source/Runtime.Console" ],
             "isBuildCommand": true,
             "showOutput": "silent",
             "problemMatcher": "$msCompile"

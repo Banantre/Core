@@ -1,5 +1,5 @@
 ﻿{
-  "projects": [ "Source/Core", "Source/Core.Specifications"],
+  "projects": [ "Source/Runtime", "Source/Runtime.Specifications", "Source/Runtime.Console", "Source/Runtime.JavaScript"],
   "sdk": {
     "version": "1.1.0"
   }
