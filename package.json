@@ -1,0 +1,41 @@
+{
+  "name": "banantre-runtime-javascript",
+  "description": "JavaScript support for Banantre",
+  "version": "1.0.0",
+  "main": "Distribution/index.js",
+  "scripts": {
+    "test": "node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banantre/Engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Banantre/Engine/issues"
+  },
+  "homepage": "https://github.com/Banantre/Engine#readme",
+  "devDependencies": {
+    "cratis.pipeline": "file:./Modules/Cratis.Pipeline"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.2.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.12",
+      "process": "npm:jspm-nodelibs-process@^0.2.0"
+    },
+    "overrides": {
+      "npm:babel-runtime@5.8.38": {
+        "main": false,
+        "dependencies": {},
+        "optionalDependencies": {
+          "core-js": "^1.2.0"
+        }
+      }
+    }
+  }
+}
