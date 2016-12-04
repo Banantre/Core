@@ -8,14 +8,14 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": [ "Source/Core.Specifications" ],
+            "args": [ "Source/Runtime.Specifications" ],
             "isBuildCommand": true,
             "showOutput": "silent",
             "problemMatcher": "$msCompile"
         },
         {
             "taskName": "test",
-            "args": [ "Source/Core.Specifications" ],
+            "args": [ "Source/Runtime.Specifications" ],
             "isBuildCommand": true,
             "showOutput": "silent",
             "problemMatcher": "$msCompile"

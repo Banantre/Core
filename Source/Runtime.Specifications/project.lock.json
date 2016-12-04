@@ -2380,7 +2380,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Core/1.0.0": {
+      "Runtime/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
@@ -7322,18 +7322,18 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Core/1.0.0": {
+    "Runtime/1.0.0": {
       "type": "project",
-      "path": "../Core/project.json"
+      "path": "../Runtime/project.json"
     }
   },
   "projectFileDependencyGroups": {
     "": [
-      "Core >= 1.0.0-*",
       "Machine.Specifications >= 0.11.0",
       "Machine.Specifications.Should >= 0.11.0",
       "Microsoft.NETCore.App >= 1.1.0",
       "Moq >= 4.6.25-alpha",
+      "Runtime >= 1.0.0-*",
       "dotnet-test-mspec"
     ],
     ".NETCoreApp,Version=v1.0": []
