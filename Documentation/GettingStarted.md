@@ -32,7 +32,7 @@ As with all code in Banantree, you will find small specialized specifications. T
 construct (given, when, then) found in [Behavior Driven Development](http://en.wikipedia.org/wiki/Behavior_Driven_Development).
 
 
-## .NET / C#
+## .NET / CSharp
 
 Each of the .NET projects has dependencies that needs to be restored. If you are using the CLI, you can restore all dependencies for all projects
 by running the following command at the root:
