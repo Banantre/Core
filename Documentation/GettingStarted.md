@@ -34,6 +34,17 @@ construct (given, when, then) found in [Behavior Driven Development](http://en.w
 
 ## .NET / CSharp
 
+Get Started
+
+If you're new to .NET Core and have 10 minutes to try it, start here:
+
+[What is .NET Core?](https://www.microsoft.com/net/core/platform)
+[Get Started with the Official releases of .NET Core on Windows, OSX and Linux](https://www.microsoft.com/net/core)
+If you have some more time and want to go deeper or get the latest builds:
+
+[Get the latest builds of .NET Core on Windows, OSX and Linux](https://github.com/dotnet/core-setup/blob/master/README.md)
+[Get the latest builds of ASP.NET Core on Windows, OSX and Linux](https://github.com/aspnet/home)
+
 Each of the .NET projects has dependencies that needs to be restored. If you are using the CLI, you can restore all dependencies for all projects
 by running the following command at the root:
 
